@@ -7,7 +7,7 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "tslint -p tsconfig.json src/**/*.{ts,tsx}"
   },
   "dependencies": {
     "@types/jest": "^24.0.23",
@@ -26,7 +26,10 @@
     "eslint": "^6.6.0",
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.57.0",
-    "react-test-renderer": "16.9.0"
+    "react-test-renderer": "16.9.0",
+    "tslint": "^5.20.1",
+    "tslint-config-airbnb": "^5.11.2",
+    "tslint-react": "^4.1.0"
   },
   "jest": {
     "preset": "react-native"
