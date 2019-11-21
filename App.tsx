@@ -1,20 +1,25 @@
 import React from 'react'
-import { View, SafeAreaView, Platform, Text } from 'react-native'
+import { View, SafeAreaView, Platform, Text, StatusBar } from 'react-native'
 
 const App = () => {
 
   if (Platform.OS === 'ios') {
     return (
-      <SafeAreaView style={{ flex: 1 }}>
-        <View>
-          <Text>막차</Text>
-        </View>
-      </SafeAreaView>
+      <React.Fragment>
+        <SafeAreaView style={{ backgroundColor: "#26274F", flex: 1 }}></SafeAreaView>
+        <StatusBar barStyle="light-content"></StatusBar>
+        <SafeAreaView style={{ backgroundColor: "#000033", flex: 1 }}>
+          <View>
+            <Text style={{ color: "white", fontSize: 20 }}>막차</Text>
+          </View>
+        </SafeAreaView>
+      </React.Fragment>
+
     )
   } else {
     return (
-      <View style={{ flex: 1 }}>
-        <Text>막차</Text>
+      <View style={{ flex: 1, backgroundColor: "#000033" }}>
+        <Text style={{ color: "white", fontSize: 20 }}>막차</Text>
       </View>
     )
   }
