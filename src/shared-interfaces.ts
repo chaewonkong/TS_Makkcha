@@ -4,8 +4,8 @@ export interface ISearchMakkchaParam {
   startY: number;
   endX: number;
   endY: number;
-  curfewHour: number | null;
-  curfewMin: number | null
+  curfewHour?: number | null;
+  curfewMin?: number | null
 }
 
 // Interface for search subway res
@@ -38,7 +38,6 @@ export interface ISubwayStep {
   nextStation: string | null;
   points: IXYPoints[]
   options: string | null;
-
 }
 
 // Interface for x,y coords

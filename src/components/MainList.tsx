@@ -14,8 +14,6 @@ const MainList: React.FC<IProps> = props => {
         startY: 37.487626,
         endX: 126.7208015,
         endY: 37.4905169,
-        curfewHour: null,
-        curfewMin: null
     }
     const getData = async (pointsConfig: ISearchMakkchaParam): Promise<void> => {
         const data = await API.getSubway(pointsConfig)
