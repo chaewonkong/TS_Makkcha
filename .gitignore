@@ -60,3 +60,7 @@ buck-out/
 
 # Project
 src/api
+
+# builds
+ios
+android
