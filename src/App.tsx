@@ -1,5 +1,6 @@
 import React from 'react'
 import { View, SafeAreaView, Platform, Text, StatusBar } from 'react-native'
+import MainList from "./components/MainList"
 
 const App = () => {
 
@@ -9,18 +10,14 @@ const App = () => {
         <SafeAreaView style={{ backgroundColor: "#26274F", flex: 1 }}></SafeAreaView>
         <StatusBar barStyle="light-content"></StatusBar>
         <SafeAreaView style={{ backgroundColor: "#000033", flex: 1 }}>
-          <View>
-            <Text style={{ color: "white", fontSize: 20 }}>막차</Text>
-          </View>
+          <MainList />
         </SafeAreaView>
       </React.Fragment>
 
     )
   } else {
     return (
-      <View style={{ flex: 1, backgroundColor: "#000033" }}>
-        <Text style={{ color: "white", fontSize: 20 }}>막차</Text>
-      </View>
+      <MainList />
     )
   }
 }

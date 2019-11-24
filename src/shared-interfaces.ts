@@ -1,30 +1,52 @@
-// Need to be amended
-
-export interface ISimplePost {
-    id: string | number;
-    title: string;
-    video_id: string;
-    author: string;
-    content: string;
+// Search params for makkcha
+export interface ISearchMakkchaParam {
+  startX: number;
+  startY: number;
+  endX: number;
+  endY: number;
+  curfewHour: number | null;
+  curfewMin: number | null
 }
 
-export type IPosts =ISimplePost[]
+// Interface for search subway res
+export interface ISubway {
+  type: string;
+  longName: string | null;
+  transferNum: number;
+  totalTime: number;
+  lastTime: string;
+  remain: number;
+  operationType: string;
+  stepList: ISubwayStep[]
+}
 
+// Interface for each steps
+export interface ISubwayStep {
+  type: string,
+  from: string | null;
+  to: string | null;
+  fromPoint: number[] | null;
+  toPoint: number[] | null;
+  duration: number;
+  iconColor: string;
+  iconName: string | null;
+  headsign: string | null;
+  door: string | null;
+  name: string | null;
+  operationType: string | null;
+  departureTime: string | null;
+  nextStation: string | null;
+  points: IXYPoints[]
+  options: string | null;
 
-export interface GetArticleRes {
-    config: Object,
-    data: ISimplePost,
-    headers: Object,
-    request?: Object,
-    status: number,
-    statusText: "OK" | any
-  }
-  
-  export interface GetArticlesRes {
-    config: Object,
-    data: IPosts,
-    headers: Object,
-    request?: Object,
-    status: number,
-    statusText: "OK" | any
-  }
+}
+
+// Interface for x,y coords
+export interface IXYPoints {
+  x: number;
+  y: number;
+}
+
+/*
+
+*/
