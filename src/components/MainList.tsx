@@ -17,14 +17,13 @@ const MainList: React.FC<IProps> = props => {
         curfewHour: null,
         curfewMin: null
     }
-    const getData = async (pointsConfig: ISearchMakkchaParam): Promise<ISubway[]> => {
-        const res = await API.getSubway(pointsConfig)
-        return res
+    const getData = async (pointsConfig: ISearchMakkchaParam): Promise<void> => {
+        const data = await API.getSubway(pointsConfig)
+        setData(data)
     }
-    const [data, setData] = React.useState();
+    const [data, setData] = React.useState<ISubway[]>();
     React.useEffect(() => {
-        const subway = getData(pointsConfig)
-        setData(subway)
+        getData(pointsConfig)
     }, []);
     console.log(data)
     return (
