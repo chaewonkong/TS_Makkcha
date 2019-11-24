@@ -27,7 +27,7 @@ const MainList: React.FC<IProps> = props => {
     }, []);
     console.log(data)
     return (
-        <View>
+        <View style={{ backgroundColor: "#000033", flex: 1 }}>
             <Text style={{ color: "white", fontSize: 20 }}>막차</Text>
         </View>
     )

@@ -7,7 +7,7 @@ const App = () => {
   if (Platform.OS === 'ios') {
     return (
       <React.Fragment>
-        <SafeAreaView style={{ backgroundColor: "#26274F", flex: 1 }}></SafeAreaView>
+        <SafeAreaView style={{ backgroundColor: "#26274F", flex: 0 }}></SafeAreaView>
         <StatusBar barStyle="light-content"></StatusBar>
         <SafeAreaView style={{ backgroundColor: "#000033", flex: 1 }}>
           <MainList />
