@@ -88,6 +88,7 @@ $ npm install -g yarn
 $ nvm install 10.16.0
 $ nvm use
 $ yarn install
+$ cd ios && pod install
 ```
 
 
