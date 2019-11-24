@@ -1,9 +1,9 @@
 # 🚌️ 막차 (Makkcha) - Native(ios/android) 🚌
 ![badge](https://img.shields.io/badge/Part-Front--end-brightgreen)![lang](https://img.shields.io/badge/Language-JavaScript-blue)![react](https://img.shields.io/badge/Tech--stack-React-orange)
 
-#### 주의!
+## 주의!
 - 막차 서비스 TypeScript 리팩토링 진행 Repo
-- 서비스 보안을 위해 일부만 공개됨.
+- **서비스 보안을 위해 일부 코드만 공개됨.**
 - Native_Makkcha(Private Repository; JS based) will be deprecated soon!
 
 ## 앱 설치 링크
